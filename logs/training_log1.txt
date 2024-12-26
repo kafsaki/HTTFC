@@ -1,0 +1,337 @@
+开始训练模型
+  0%|          | 0/6 [00:00<?, ?it/s]/mnt/f/tmp_HAND_GESTURE/TFNet/Train.py:179: UserWarning: To copy construct from a tensor, it is recommended to use sourceTensor.clone().detach() or sourceTensor.clone().detach().requires_grad_(True), rather than torch.tensor(sourceTensor).
+  targetOutData = [torch.tensor(yi).to(device) for yi in label]
+100%|██████████| 6/6 [08:36<00:00, 86.15s/it]
+epoch: 0, trainLoss: 835.65448, lr: 0.000100
+开始验证模型
+  0%|          | 0/12 [00:00<?, ?it/s]/mnt/f/tmp_HAND_GESTURE/TFNet/Train.py:261: UserWarning: To copy construct from a tensor, it is recommended to use sourceTensor.clone().detach() or sourceTensor.clone().detach().requires_grad_(True), rather than torch.tensor(sourceTensor).
+  targetOutData = [torch.tensor(yi).to(device) for yi in label]
+100%|██████████| 12/12 [01:36<00:00,  8.04s/it]
+  0%|          | 0/6 [00:00<?, ?it/s]validLoss: 161.48443, werScore: 335.56
+bestLoss: 161.48443, beatEpoch: 0, bestWerScore: 335.56, bestWerScoreEpoch: 0
+100%|██████████| 6/6 [08:06<00:00, 81.07s/it]
+  0%|          | 0/12 [00:00<?, ?it/s]epoch: 1, trainLoss: 765.20094, lr: 0.000100
+开始验证模型
+100%|██████████| 12/12 [02:35<00:00, 12.99s/it]
+validLoss: 151.75026, werScore: 285.59
+bestLoss: 151.75026, beatEpoch: 1, bestWerScore: 285.59, bestWerScoreEpoch: 1
+100%|██████████| 6/6 [08:10<00:00, 81.77s/it]
+epoch: 2, trainLoss: 685.87828, lr: 0.000100
+开始验证模型
+100%|██████████| 12/12 [02:09<00:00, 10.77s/it]
+validLoss: 144.21304, werScore: 267.78
+bestLoss: 144.21304, beatEpoch: 2, bestWerScore: 267.78, bestWerScoreEpoch: 2
+100%|██████████| 6/6 [07:12<00:00, 72.03s/it]
+  0%|          | 0/12 [00:00<?, ?it/s]epoch: 3, trainLoss: 639.70395, lr: 0.000100
+开始验证模型
+100%|██████████| 12/12 [02:10<00:00, 10.85s/it]
+validLoss: 139.33148, werScore: 248.35
+bestLoss: 139.33148, beatEpoch: 3, bestWerScore: 248.35, bestWerScoreEpoch: 3
+100%|██████████| 6/6 [08:01<00:00, 80.32s/it]
+  0%|          | 0/12 [00:00<?, ?it/s]epoch: 4, trainLoss: 668.19236, lr: 0.000100
+开始验证模型
+100%|██████████| 12/12 [02:05<00:00, 10.47s/it]
+validLoss: 116.76685, werScore: 161.41
+bestLoss: 116.76685, beatEpoch: 4, bestWerScore: 161.41, bestWerScoreEpoch: 4
+100%|██████████| 6/6 [07:28<00:00, 74.68s/it]
+  0%|          | 0/12 [00:00<?, ?it/s]epoch: 5, trainLoss: 603.98242, lr: 0.000100
+开始验证模型
+100%|██████████| 12/12 [02:06<00:00, 10.52s/it]
+validLoss: 114.61937, werScore: 157.16
+bestLoss: 114.61937, beatEpoch: 5, bestWerScore: 157.16, bestWerScoreEpoch: 5
+100%|██████████| 6/6 [07:51<00:00, 78.55s/it]
+epoch: 6, trainLoss: 587.65658, lr: 0.000100
+开始验证模型
+100%|██████████| 12/12 [02:29<00:00, 12.46s/it]
+validLoss: 113.00956, werScore: 151.86
+bestLoss: 113.00956, beatEpoch: 6, bestWerScore: 151.86, bestWerScoreEpoch: 6
+100%|██████████| 6/6 [07:40<00:00, 76.74s/it]
+  0%|          | 0/12 [00:00<?, ?it/s]epoch: 7, trainLoss: 570.11069, lr: 0.000100
+开始验证模型
+100%|██████████| 12/12 [02:11<00:00, 11.00s/it]
+validLoss: 87.89896, werScore: 91.57
+bestLoss: 87.89896, beatEpoch: 7, bestWerScore: 91.57, bestWerScoreEpoch: 7
+100%|██████████| 6/6 [07:42<00:00, 77.12s/it]
+  0%|          | 0/12 [00:00<?, ?it/s]epoch: 8, trainLoss: 504.99503, lr: 0.000100
+开始验证模型
+100%|██████████| 12/12 [02:20<00:00, 11.73s/it]
+  0%|          | 0/6 [00:00<?, ?it/s]validLoss: 64.96075, werScore: 86.78
+bestLoss: 64.96075, beatEpoch: 8, bestWerScore: 86.78, bestWerScoreEpoch: 8
+100%|██████████| 6/6 [07:49<00:00, 78.26s/it]
+epoch: 9, trainLoss: 449.34340, lr: 0.000100
+开始验证模型
+100%|██████████| 12/12 [02:10<00:00, 10.90s/it]
+validLoss: 64.89002, werScore: 86.78
+bestLoss: 64.89002, beatEpoch: 9, bestWerScore: 86.78, bestWerScoreEpoch: 8
+100%|██████████| 6/6 [08:34<00:00, 85.72s/it]
+epoch: 10, trainLoss: 452.43743, lr: 0.000100
+开始验证模型
+100%|██████████| 12/12 [02:09<00:00, 10.77s/it]
+  0%|          | 0/6 [00:00<?, ?it/s]validLoss: 64.42114, werScore: 90.53
+bestLoss: 64.42114, beatEpoch: 10, bestWerScore: 86.78, bestWerScoreEpoch: 8
+100%|██████████| 6/6 [07:52<00:00, 78.80s/it]
+epoch: 11, trainLoss: 472.10279, lr: 0.000100
+开始验证模型
+100%|██████████| 12/12 [01:40<00:00,  8.39s/it]
+validLoss: 42.69316, werScore: 88.87
+bestLoss: 42.69316, beatEpoch: 11, bestWerScore: 86.78, bestWerScoreEpoch: 8
+100%|██████████| 6/6 [08:04<00:00, 80.69s/it]
+  0%|          | 0/12 [00:00<?, ?it/s]epoch: 12, trainLoss: 395.73341, lr: 0.000100
+开始验证模型
+100%|██████████| 12/12 [02:13<00:00, 11.09s/it]
+validLoss: 30.39930, werScore: 92.62
+bestLoss: 30.39930, beatEpoch: 12, bestWerScore: 86.78, bestWerScoreEpoch: 8
+100%|██████████| 6/6 [07:56<00:00, 79.40s/it]
+epoch: 13, trainLoss: 328.77748, lr: 0.000100
+开始验证模型
+100%|██████████| 12/12 [02:14<00:00, 11.20s/it]
+validLoss: 29.14506, werScore: 95.74
+bestLoss: 29.14506, beatEpoch: 13, bestWerScore: 86.78, bestWerScoreEpoch: 8
+100%|██████████| 6/6 [07:08<00:00, 71.47s/it]
+epoch: 14, trainLoss: 358.21482, lr: 0.000100
+开始验证模型
+100%|██████████| 12/12 [02:20<00:00, 11.73s/it]
+validLoss: 25.39813, werScore: 100.00
+bestLoss: 25.39813, beatEpoch: 14, bestWerScore: 86.78, bestWerScoreEpoch: 8
+100%|██████████| 6/6 [07:42<00:00, 77.14s/it]
+  0%|          | 0/12 [00:00<?, ?it/s]epoch: 15, trainLoss: 287.65969, lr: 0.000100
+开始验证模型
+100%|██████████| 12/12 [01:40<00:00,  8.41s/it]
+  0%|          | 0/6 [00:00<?, ?it/s]validLoss: 26.34323, werScore: 100.00
+bestLoss: 26.34323, beatEpoch: 15, bestWerScore: 86.78, bestWerScoreEpoch: 8
+100%|██████████| 6/6 [07:54<00:00, 79.16s/it]
+epoch: 16, trainLoss: 301.12249, lr: 0.000100
+开始验证模型
+100%|██████████| 12/12 [02:02<00:00, 10.19s/it]
+  0%|          | 0/6 [00:00<?, ?it/s]validLoss: 28.39087, werScore: 100.00
+bestLoss: 28.39087, beatEpoch: 16, bestWerScore: 86.78, bestWerScoreEpoch: 8
+100%|██████████| 6/6 [07:56<00:00, 79.43s/it]
+epoch: 17, trainLoss: 272.85161, lr: 0.000100
+开始验证模型
+100%|██████████| 12/12 [02:06<00:00, 10.52s/it]
+validLoss: 30.39493, werScore: 100.00
+bestLoss: 30.39493, beatEpoch: 17, bestWerScore: 86.78, bestWerScoreEpoch: 8
+100%|██████████| 6/6 [07:26<00:00, 74.47s/it]
+epoch: 18, trainLoss: 258.29917, lr: 0.000100
+开始验证模型
+100%|██████████| 12/12 [02:53<00:00, 14.45s/it]
+validLoss: 30.55381, werScore: 100.00
+bestLoss: 30.55381, beatEpoch: 18, bestWerScore: 86.78, bestWerScoreEpoch: 8
+100%|██████████| 6/6 [07:27<00:00, 74.51s/it]
+epoch: 19, trainLoss: 251.44445, lr: 0.000100
+开始验证模型
+100%|██████████| 12/12 [02:29<00:00, 12.46s/it]
+validLoss: 31.63986, werScore: 100.00
+bestLoss: 31.63986, beatEpoch: 19, bestWerScore: 86.78, bestWerScoreEpoch: 8
+100%|██████████| 6/6 [07:28<00:00, 74.71s/it]
+epoch: 20, trainLoss: 283.13517, lr: 0.000100
+开始验证模型
+100%|██████████| 12/12 [01:57<00:00,  9.76s/it]
+  0%|          | 0/6 [00:00<?, ?it/s]validLoss: 31.88916, werScore: 100.00
+bestLoss: 31.88916, beatEpoch: 20, bestWerScore: 86.78, bestWerScoreEpoch: 8
+100%|██████████| 6/6 [07:27<00:00, 74.54s/it]
+  0%|          | 0/12 [00:00<?, ?it/s]epoch: 21, trainLoss: 299.97713, lr: 0.000100
+开始验证模型
+100%|██████████| 12/12 [02:07<00:00, 10.60s/it]
+validLoss: 31.41565, werScore: 100.00
+bestLoss: 31.41565, beatEpoch: 21, bestWerScore: 86.78, bestWerScoreEpoch: 8
+100%|██████████| 6/6 [07:30<00:00, 75.01s/it]
+  0%|          | 0/12 [00:00<?, ?it/s]epoch: 22, trainLoss: 294.00463, lr: 0.000100
+开始验证模型
+100%|██████████| 12/12 [02:12<00:00, 11.05s/it]
+  0%|          | 0/6 [00:00<?, ?it/s]validLoss: 31.68893, werScore: 100.00
+bestLoss: 31.68893, beatEpoch: 22, bestWerScore: 86.78, bestWerScoreEpoch: 8
+100%|██████████| 6/6 [08:26<00:00, 84.39s/it]
+  0%|          | 0/12 [00:00<?, ?it/s]epoch: 23, trainLoss: 274.15168, lr: 0.000100
+开始验证模型
+100%|██████████| 12/12 [02:12<00:00, 11.06s/it]
+validLoss: 30.36517, werScore: 100.00
+bestLoss: 30.36517, beatEpoch: 23, bestWerScore: 86.78, bestWerScoreEpoch: 8
+100%|██████████| 6/6 [08:08<00:00, 81.42s/it]
+  0%|          | 0/12 [00:00<?, ?it/s]epoch: 24, trainLoss: 287.60315, lr: 0.000100
+开始验证模型
+100%|██████████| 12/12 [02:00<00:00, 10.05s/it]
+validLoss: 28.70852, werScore: 100.00
+bestLoss: 28.70852, beatEpoch: 24, bestWerScore: 86.78, bestWerScoreEpoch: 8
+100%|██████████| 6/6 [08:07<00:00, 81.21s/it]
+epoch: 25, trainLoss: 291.49273, lr: 0.000100
+开始验证模型
+100%|██████████| 12/12 [02:18<00:00, 11.52s/it]
+  0%|          | 0/6 [00:00<?, ?it/s]validLoss: 26.84230, werScore: 100.00
+bestLoss: 26.84230, beatEpoch: 25, bestWerScore: 86.78, bestWerScoreEpoch: 8
+100%|██████████| 6/6 [07:27<00:00, 74.55s/it]
+epoch: 26, trainLoss: 240.69461, lr: 0.000100
+开始验证模型
+100%|██████████| 12/12 [02:08<00:00, 10.69s/it]
+validLoss: 25.50509, werScore: 100.00
+bestLoss: 25.50509, beatEpoch: 26, bestWerScore: 86.78, bestWerScoreEpoch: 8
+100%|██████████| 6/6 [07:48<00:00, 78.16s/it]
+  0%|          | 0/12 [00:00<?, ?it/s]epoch: 27, trainLoss: 254.04739, lr: 0.000100
+开始验证模型
+100%|██████████| 12/12 [02:32<00:00, 12.75s/it]
+  0%|          | 0/6 [00:00<?, ?it/s]validLoss: 24.81076, werScore: 100.00
+bestLoss: 24.81076, beatEpoch: 27, bestWerScore: 86.78, bestWerScoreEpoch: 8
+100%|██████████| 6/6 [08:10<00:00, 81.82s/it]
+  0%|          | 0/12 [00:00<?, ?it/s]epoch: 28, trainLoss: 262.84143, lr: 0.000100
+开始验证模型
+100%|██████████| 12/12 [02:29<00:00, 12.45s/it]
+validLoss: 24.83436, werScore: 100.00
+bestLoss: 24.83436, beatEpoch: 28, bestWerScore: 86.78, bestWerScoreEpoch: 8
+100%|██████████| 6/6 [07:41<00:00, 76.88s/it]
+epoch: 29, trainLoss: 251.74366, lr: 0.000100
+开始验证模型
+100%|██████████| 12/12 [02:19<00:00, 11.63s/it]
+validLoss: 24.71437, werScore: 98.33
+bestLoss: 24.71437, beatEpoch: 29, bestWerScore: 86.78, bestWerScoreEpoch: 8
+100%|██████████| 6/6 [07:19<00:00, 73.23s/it]
+  0%|          | 0/12 [00:00<?, ?it/s]epoch: 30, trainLoss: 262.65554, lr: 0.000100
+开始验证模型
+100%|██████████| 12/12 [02:12<00:00, 11.01s/it]
+validLoss: 25.13032, werScore: 92.62
+bestLoss: 25.13032, beatEpoch: 30, bestWerScore: 86.78, bestWerScoreEpoch: 8
+100%|██████████| 6/6 [07:31<00:00, 75.27s/it]
+  0%|          | 0/12 [00:00<?, ?it/s]epoch: 31, trainLoss: 264.72740, lr: 0.000100
+开始验证模型
+100%|██████████| 12/12 [02:21<00:00, 11.78s/it]
+  0%|          | 0/6 [00:00<?, ?it/s]validLoss: 25.47516, werScore: 88.87
+bestLoss: 25.47516, beatEpoch: 31, bestWerScore: 86.78, bestWerScoreEpoch: 8
+100%|██████████| 6/6 [07:34<00:00, 75.73s/it]
+epoch: 32, trainLoss: 257.36278, lr: 0.000100
+开始验证模型
+100%|██████████| 12/12 [02:21<00:00, 11.77s/it]
+  0%|          | 0/6 [00:00<?, ?it/s]validLoss: 25.72166, werScore: 88.87
+bestLoss: 25.72166, beatEpoch: 32, bestWerScore: 86.78, bestWerScoreEpoch: 8
+100%|██████████| 6/6 [08:20<00:00, 83.45s/it]
+  0%|          | 0/12 [00:00<?, ?it/s]epoch: 33, trainLoss: 253.81935, lr: 0.000100
+开始验证模型
+100%|██████████| 12/12 [02:02<00:00, 10.17s/it]
+  0%|          | 0/6 [00:00<?, ?it/s]validLoss: 25.87929, werScore: 88.87
+bestLoss: 25.87929, beatEpoch: 33, bestWerScore: 86.78, bestWerScoreEpoch: 8
+100%|██████████| 6/6 [08:10<00:00, 81.67s/it]
+  0%|          | 0/12 [00:00<?, ?it/s]epoch: 34, trainLoss: 245.77248, lr: 0.000100
+开始验证模型
+100%|██████████| 12/12 [02:07<00:00, 10.65s/it]
+  0%|          | 0/6 [00:00<?, ?it/s]validLoss: 25.69526, werScore: 88.87
+bestLoss: 25.69526, beatEpoch: 34, bestWerScore: 86.78, bestWerScoreEpoch: 8
+100%|██████████| 6/6 [07:41<00:00, 77.00s/it]
+  0%|          | 0/12 [00:00<?, ?it/s]epoch: 35, trainLoss: 247.92678, lr: 0.000020
+开始验证模型
+100%|██████████| 12/12 [02:19<00:00, 11.60s/it]
+validLoss: 25.74614, werScore: 88.87
+bestLoss: 25.74614, beatEpoch: 35, bestWerScore: 86.78, bestWerScoreEpoch: 8
+100%|██████████| 6/6 [07:55<00:00, 79.21s/it]
+  0%|          | 0/12 [00:00<?, ?it/s]epoch: 36, trainLoss: 257.00435, lr: 0.000020
+开始验证模型
+100%|██████████| 12/12 [02:06<00:00, 10.58s/it]
+validLoss: 25.39394, werScore: 88.87
+bestLoss: 25.39394, beatEpoch: 36, bestWerScore: 86.78, bestWerScoreEpoch: 8
+100%|██████████| 6/6 [07:38<00:00, 76.45s/it]
+epoch: 37, trainLoss: 232.46864, lr: 0.000020
+开始验证模型
+100%|██████████| 12/12 [02:09<00:00, 10.78s/it]
+validLoss: 25.35107, werScore: 88.87
+bestLoss: 25.35107, beatEpoch: 37, bestWerScore: 86.78, bestWerScoreEpoch: 8
+100%|██████████| 6/6 [08:10<00:00, 81.72s/it]
+epoch: 38, trainLoss: 240.99702, lr: 0.000020
+开始验证模型
+100%|██████████| 12/12 [02:02<00:00, 10.25s/it]
+  0%|          | 0/6 [00:00<?, ?it/s]validLoss: 25.35597, werScore: 88.87
+bestLoss: 25.35597, beatEpoch: 38, bestWerScore: 86.78, bestWerScoreEpoch: 8
+100%|██████████| 6/6 [08:19<00:00, 83.20s/it]
+  0%|          | 0/12 [00:00<?, ?it/s]epoch: 39, trainLoss: 238.14763, lr: 0.000020
+开始验证模型
+100%|██████████| 12/12 [02:06<00:00, 10.53s/it]
+validLoss: 25.22559, werScore: 88.87
+bestLoss: 25.22559, beatEpoch: 39, bestWerScore: 86.78, bestWerScoreEpoch: 8
+100%|██████████| 6/6 [07:11<00:00, 71.84s/it]
+  0%|          | 0/12 [00:00<?, ?it/s]epoch: 40, trainLoss: 226.37475, lr: 0.000020
+开始验证模型
+100%|██████████| 12/12 [02:01<00:00, 10.11s/it]
+validLoss: 25.22299, werScore: 88.87
+bestLoss: 25.22299, beatEpoch: 40, bestWerScore: 86.78, bestWerScoreEpoch: 8
+100%|██████████| 6/6 [07:30<00:00, 75.06s/it]
+epoch: 41, trainLoss: 226.83960, lr: 0.000020
+开始验证模型
+100%|██████████| 12/12 [02:11<00:00, 10.99s/it]
+validLoss: 25.30340, werScore: 88.87
+bestLoss: 25.30340, beatEpoch: 41, bestWerScore: 86.78, bestWerScoreEpoch: 8
+100%|██████████| 6/6 [08:06<00:00, 81.08s/it]
+epoch: 42, trainLoss: 237.26000, lr: 0.000020
+开始验证模型
+100%|██████████| 12/12 [02:21<00:00, 11.76s/it]
+validLoss: 25.17463, werScore: 88.87
+bestLoss: 25.17463, beatEpoch: 42, bestWerScore: 86.78, bestWerScoreEpoch: 8
+100%|██████████| 6/6 [07:56<00:00, 79.41s/it]
+  0%|          | 0/12 [00:00<?, ?it/s]epoch: 43, trainLoss: 243.67443, lr: 0.000020
+开始验证模型
+100%|██████████| 12/12 [02:03<00:00, 10.26s/it]
+validLoss: 24.85764, werScore: 92.62
+bestLoss: 24.85764, beatEpoch: 43, bestWerScore: 86.78, bestWerScoreEpoch: 8
+100%|██████████| 6/6 [07:52<00:00, 78.79s/it]
+epoch: 44, trainLoss: 216.23798, lr: 0.000020
+开始验证模型
+100%|██████████| 12/12 [02:10<00:00, 10.86s/it]
+validLoss: 24.76623, werScore: 93.66
+bestLoss: 24.76623, beatEpoch: 44, bestWerScore: 86.78, bestWerScoreEpoch: 8
+100%|██████████| 6/6 [07:01<00:00, 70.32s/it]
+  0%|          | 0/12 [00:00<?, ?it/s]epoch: 45, trainLoss: 222.73826, lr: 0.000004
+开始验证模型
+100%|██████████| 12/12 [02:09<00:00, 10.82s/it]
+validLoss: 24.79736, werScore: 93.66
+bestLoss: 24.79736, beatEpoch: 45, bestWerScore: 86.78, bestWerScoreEpoch: 8
+100%|██████████| 6/6 [08:14<00:00, 82.48s/it]
+epoch: 46, trainLoss: 248.74166, lr: 0.000004
+开始验证模型
+100%|██████████| 12/12 [02:05<00:00, 10.45s/it]
+validLoss: 24.76104, werScore: 93.66
+bestLoss: 24.76104, beatEpoch: 46, bestWerScore: 86.78, bestWerScoreEpoch: 8
+100%|██████████| 6/6 [07:56<00:00, 79.43s/it]
+  0%|          | 0/12 [00:00<?, ?it/s]epoch: 47, trainLoss: 228.74486, lr: 0.000004
+开始验证模型
+100%|██████████| 12/12 [02:17<00:00, 11.43s/it]
+  0%|          | 0/6 [00:00<?, ?it/s]validLoss: 24.76564, werScore: 93.66
+bestLoss: 24.76564, beatEpoch: 47, bestWerScore: 86.78, bestWerScoreEpoch: 8
+100%|██████████| 6/6 [07:30<00:00, 75.16s/it]
+epoch: 48, trainLoss: 217.57686, lr: 0.000004
+开始验证模型
+100%|██████████| 12/12 [01:48<00:00,  9.05s/it]
+validLoss: 24.77337, werScore: 93.66
+bestLoss: 24.77337, beatEpoch: 48, bestWerScore: 86.78, bestWerScoreEpoch: 8
+100%|██████████| 6/6 [07:55<00:00, 79.17s/it]
+epoch: 49, trainLoss: 216.89782, lr: 0.000004
+开始验证模型
+100%|██████████| 12/12 [02:19<00:00, 11.62s/it]
+  0%|          | 0/6 [00:00<?, ?it/s]validLoss: 24.82139, werScore: 92.62
+bestLoss: 24.82139, beatEpoch: 49, bestWerScore: 86.78, bestWerScoreEpoch: 8
+100%|██████████| 6/6 [08:07<00:00, 81.33s/it]
+  0%|          | 0/12 [00:00<?, ?it/s]epoch: 50, trainLoss: 217.47339, lr: 0.000004
+开始验证模型
+100%|██████████| 12/12 [01:57<00:00,  9.83s/it]
+validLoss: 24.68719, werScore: 93.66
+bestLoss: 24.68719, beatEpoch: 50, bestWerScore: 86.78, bestWerScoreEpoch: 8
+100%|██████████| 6/6 [07:42<00:00, 77.05s/it]
+epoch: 51, trainLoss: 229.34007, lr: 0.000004
+开始验证模型
+100%|██████████| 12/12 [01:45<00:00,  8.76s/it]
+validLoss: 24.68892, werScore: 93.66
+bestLoss: 24.68892, beatEpoch: 51, bestWerScore: 86.78, bestWerScoreEpoch: 8
+100%|██████████| 6/6 [08:01<00:00, 80.23s/it]
+epoch: 52, trainLoss: 247.92719, lr: 0.000004
+开始验证模型
+100%|██████████| 12/12 [02:07<00:00, 10.61s/it]
+  0%|          | 0/6 [00:00<?, ?it/s]validLoss: 24.63358, werScore: 93.66
+bestLoss: 24.63358, beatEpoch: 52, bestWerScore: 86.78, bestWerScoreEpoch: 8
+100%|██████████| 6/6 [06:43<00:00, 67.18s/it]
+epoch: 53, trainLoss: 230.56486, lr: 0.000004
+开始验证模型
+100%|██████████| 12/12 [02:00<00:00, 10.03s/it]
+validLoss: 24.68841, werScore: 93.66
+bestLoss: 24.68841, beatEpoch: 53, bestWerScore: 86.78, bestWerScoreEpoch: 8
+100%|██████████| 6/6 [08:37<00:00, 86.19s/it]
+epoch: 54, trainLoss: 253.30039, lr: 0.000004
+开始验证模型
+100%|██████████| 12/12 [02:21<00:00, 11.80s/it]
+validLoss: 24.65093, werScore: 93.66
+bestLoss: 24.65093, beatEpoch: 54, bestWerScore: 86.78, bestWerScoreEpoch: 8
+
+Process finished with exit code 0

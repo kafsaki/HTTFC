@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Real-time Sign Language Translation</title>
+    <style>
+        /* 全局样式 */
+        body {
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(135deg, #f7a8b8, #5d74e3);
+            color: white;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        h1 {
+            font-size: 3rem;
+            margin-bottom: 20px;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: rgba(0, 0, 0, 0.6);
+            border-radius: 10px;
+        }
+
+        label {
+            font-size: 1.2rem;
+            margin-bottom: 10px;
+            display: block;
+        }
+
+        input[type="text"] {
+            padding: 10px;
+            font-size: 1rem;
+            border-radius: 5px;
+            border: none;
+            margin-bottom: 20px;
+            width: 100%;
+            box-sizing: border-box;
+        }
+
+        #videoElement {
+            width: 100%;
+            max-width: 640px;
+            border-radius: 10px;
+            margin-bottom: 20px;
+        }
+
+        .button-container {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            margin-bottom: 20px;
+        }
+
+        button {
+            padding: 10px 20px;
+            font-size: 1rem;
+            background-color: #ff66b3;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        button:hover {
+            background-color: #ff3385;
+        }
+
+        button:disabled {
+            background-color: #d3d3d3;
+            cursor: not-allowed;
+        }
+
+        .output-container {
+            margin-top: 20px;
+            background-color: rgba(0, 0, 0, 0.5);
+            padding: 20px;
+            border-radius: 10px;
+        }
+
+        .output-text {
+            font-size: 1.2rem;
+            color: #ffccff;
+            margin-top: 10px;
+        }
+
+        /* 动画效果 */
+        .fade-in {
+            animation: fadeIn 1s ease-in-out;
+        }
+
+        @keyframes fadeIn {
+            0% { opacity: 0; }
+            100% { opacity: 1; }
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Real-time Sign Language Translation</h1>
+
+    <div class="container">
+        <label for="currentUser">Enter Your Name:</label>
+        <input type="text" id="currentUser" name="currentUser" placeholder="Enter your name" required />
+
+        <video id="videoElement" autoplay></video>
+
+        <div class="button-container">
+            <button type="button" onclick="startRecording()" id="startButton">Start Recording</button>
+            <button type="button" onclick="stopRecording()" id="stopButton" disabled>Stop Recording</button>
+        </div>
+
+        <div class="output-container fade-in">
+            <div id="translationText" class="output-text">Waiting for translation...</div>
+        </div>
+    </div>
+
+    <script>
+        let videoElement = document.getElementById("videoElement");
+        let mediaRecorder;
+        let recordedChunks = [];
+
+        // 获取摄像头权限并显示视频
+        async function setupCamera() {
+            try {
+                const stream = await navigator.mediaDevices.getUserMedia({ video: true });
+                videoElement.srcObject = stream;
+            } catch (error) {
+                console.error("Error accessing webcam:", error);
+                alert("Could not access webcam.");
+            }
+        }
+
+        // 开始录制视频
+        function startRecording() {
+            const stream = videoElement.srcObject;
+            mediaRecorder = new MediaRecorder(stream);
+            mediaRecorder.ondataavailable = event => {
+                recordedChunks.push(event.data);
+            };
+            mediaRecorder.onstop = () => {
+                const videoBlob = new Blob(recordedChunks, { type: 'video/webm' });
+                const videoFile = new File([videoBlob], "video.webm");
+
+                // 创建 FormData
+                const formData = new FormData();
+                formData.append('currentUser', document.getElementById('currentUser').value);
+                formData.append('video', videoFile);
+
+                // 上传视频文件
+                fetch('/upload_video', { method: 'POST', body: formData })
+                    .then(response => response.json())
+                    .then(data => {
+                        // 更新翻译结果
+                        document.getElementById('translationText').textContent = 'Translation: ' + data.translation;
+                    })
+                    .catch(error => {
+                        console.error('Error uploading video:', error);
+                        alert('Error uploading video.');
+                    });
+            };
+            mediaRecorder.start();
+            document.getElementById("startButton").disabled = true;
+            document.getElementById("stopButton").disabled = false;
+        }
+
+        // 停止录制视频
+        function stopRecording() {
+            mediaRecorder.stop();
+            document.getElementById("startButton").disabled = false;
+            document.getElementById("stopButton").disabled = true;
+        }
+
+        // 初始化摄像头
+        setupCamera();
+    </script>
+
+</body>
+</html>

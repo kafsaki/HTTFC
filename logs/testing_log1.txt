@@ -1,0 +1,224 @@
+开始验证模型
+  0%|          | 0/12 [00:00<?, ?it/s]/mnt/f/tmp_HAND_GESTURE/TFNet/Train.py:370: UserWarning: To copy construct from a tensor, it is recommended to use sourceTensor.clone().detach() or sourceTensor.clone().detach().requires_grad_(True), rather than torch.tensor(sourceTensor).
+  targetOutData = [torch.tensor(yi).to(device) for yi in label]
+100%|██████████| 12/12 [00:17<00:00,  1.44s/it]
+testLoss: 161.48443, werScore: 335.56
+bestLoss: 24.65093, bestEpoch: 54, bestWerScore: 335.56, bestWerScoreEpoch: 0
+开始验证模型
+100%|██████████| 12/12 [00:51<00:00,  4.31s/it]
+testLoss: 151.75026, werScore: 285.59
+bestLoss: 24.65093, bestEpoch: 54, bestWerScore: 285.59, bestWerScoreEpoch: 1
+开始验证模型
+100%|██████████| 12/12 [00:38<00:00,  3.19s/it]
+testLoss: 144.21304, werScore: 267.78
+bestLoss: 24.65093, bestEpoch: 54, bestWerScore: 267.78, bestWerScoreEpoch: 2
+开始验证模型
+100%|██████████| 12/12 [00:47<00:00,  3.93s/it]
+testLoss: 139.33148, werScore: 248.35
+bestLoss: 24.65093, bestEpoch: 54, bestWerScore: 248.35, bestWerScoreEpoch: 3
+  0%|          | 0/12 [00:00<?, ?it/s]开始验证模型
+100%|██████████| 12/12 [00:51<00:00,  4.27s/it]
+testLoss: 116.76685, werScore: 161.41
+bestLoss: 24.65093, bestEpoch: 54, bestWerScore: 161.41, bestWerScoreEpoch: 4
+开始验证模型
+100%|██████████| 12/12 [00:36<00:00,  3.08s/it]
+testLoss: 114.61937, werScore: 157.16
+bestLoss: 24.65093, bestEpoch: 54, bestWerScore: 157.16, bestWerScoreEpoch: 5
+开始验证模型
+100%|██████████| 12/12 [00:49<00:00,  4.10s/it]
+testLoss: 113.00956, werScore: 151.86
+bestLoss: 24.65093, bestEpoch: 54, bestWerScore: 151.86, bestWerScoreEpoch: 6
+  0%|          | 0/12 [00:00<?, ?it/s]开始验证模型
+100%|██████████| 12/12 [00:42<00:00,  3.56s/it]
+testLoss: 87.89896, werScore: 91.57
+bestLoss: 24.65093, bestEpoch: 54, bestWerScore: 91.57, bestWerScoreEpoch: 7
+  0%|          | 0/12 [00:00<?, ?it/s]开始验证模型
+100%|██████████| 12/12 [00:51<00:00,  4.27s/it]
+testLoss: 64.96075, werScore: 86.78
+bestLoss: 24.65093, bestEpoch: 54, bestWerScore: 86.78, bestWerScoreEpoch: 8
+开始验证模型
+100%|██████████| 12/12 [01:21<00:00,  6.81s/it]
+testLoss: 64.89002, werScore: 86.78
+bestLoss: 24.65093, bestEpoch: 54, bestWerScore: 86.78, bestWerScoreEpoch: 8
+开始验证模型
+100%|██████████| 12/12 [00:50<00:00,  4.17s/it]
+testLoss: 64.42114, werScore: 90.53
+bestLoss: 24.65093, bestEpoch: 54, bestWerScore: 86.78, bestWerScoreEpoch: 8
+开始验证模型
+100%|██████████| 12/12 [00:58<00:00,  4.91s/it]
+testLoss: 42.69316, werScore: 88.87
+bestLoss: 24.65093, bestEpoch: 54, bestWerScore: 86.78, bestWerScoreEpoch: 8
+开始验证模型
+100%|██████████| 12/12 [01:10<00:00,  5.85s/it]
+testLoss: 30.39930, werScore: 92.62
+bestLoss: 24.65093, bestEpoch: 54, bestWerScore: 86.78, bestWerScoreEpoch: 8
+开始验证模型
+100%|██████████| 12/12 [01:00<00:00,  5.04s/it]
+testLoss: 29.14506, werScore: 95.74
+bestLoss: 24.65093, bestEpoch: 54, bestWerScore: 86.78, bestWerScoreEpoch: 8
+开始验证模型
+100%|██████████| 12/12 [01:16<00:00,  6.34s/it]
+testLoss: 25.39813, werScore: 100.00
+bestLoss: 24.65093, bestEpoch: 54, bestWerScore: 86.78, bestWerScoreEpoch: 8
+  0%|          | 0/12 [00:00<?, ?it/s]开始验证模型
+100%|██████████| 12/12 [00:49<00:00,  4.12s/it]
+testLoss: 26.34323, werScore: 100.00
+bestLoss: 24.65093, bestEpoch: 54, bestWerScore: 86.78, bestWerScoreEpoch: 8
+  0%|          | 0/12 [00:00<?, ?it/s]开始验证模型
+100%|██████████| 12/12 [00:41<00:00,  3.43s/it]
+testLoss: 28.39087, werScore: 100.00
+bestLoss: 24.65093, bestEpoch: 54, bestWerScore: 86.78, bestWerScoreEpoch: 8
+  0%|          | 0/12 [00:00<?, ?it/s]开始验证模型
+100%|██████████| 12/12 [00:48<00:00,  4.06s/it]
+testLoss: 30.39493, werScore: 100.00
+bestLoss: 24.65093, bestEpoch: 54, bestWerScore: 86.78, bestWerScoreEpoch: 8
+开始验证模型
+100%|██████████| 12/12 [01:47<00:00,  8.93s/it]
+testLoss: 30.55381, werScore: 100.00
+bestLoss: 24.65093, bestEpoch: 54, bestWerScore: 86.78, bestWerScoreEpoch: 8
+  0%|          | 0/12 [00:00<?, ?it/s]开始验证模型
+100%|██████████| 12/12 [02:06<00:00, 10.57s/it]
+testLoss: 31.63986, werScore: 100.00
+bestLoss: 24.65093, bestEpoch: 54, bestWerScore: 86.78, bestWerScoreEpoch: 8
+  0%|          | 0/12 [00:00<?, ?it/s]开始验证模型
+100%|██████████| 12/12 [01:25<00:00,  7.14s/it]
+testLoss: 31.88916, werScore: 100.00
+bestLoss: 24.65093, bestEpoch: 54, bestWerScore: 86.78, bestWerScoreEpoch: 8
+开始验证模型
+100%|██████████| 12/12 [00:57<00:00,  4.77s/it]
+testLoss: 31.41565, werScore: 100.00
+bestLoss: 24.65093, bestEpoch: 54, bestWerScore: 86.78, bestWerScoreEpoch: 8
+开始验证模型
+100%|██████████| 12/12 [01:29<00:00,  7.43s/it]
+testLoss: 31.68893, werScore: 100.00
+bestLoss: 24.65093, bestEpoch: 54, bestWerScore: 86.78, bestWerScoreEpoch: 8
+开始验证模型
+100%|██████████| 12/12 [01:12<00:00,  6.08s/it]
+testLoss: 30.36517, werScore: 100.00
+bestLoss: 24.65093, bestEpoch: 54, bestWerScore: 86.78, bestWerScoreEpoch: 8
+开始验证模型
+100%|██████████| 12/12 [01:47<00:00,  8.98s/it]
+testLoss: 28.70852, werScore: 100.00
+bestLoss: 24.65093, bestEpoch: 54, bestWerScore: 86.78, bestWerScoreEpoch: 8
+开始验证模型
+100%|██████████| 12/12 [01:13<00:00,  6.10s/it]
+testLoss: 26.84230, werScore: 100.00
+bestLoss: 24.65093, bestEpoch: 54, bestWerScore: 86.78, bestWerScoreEpoch: 8
+  0%|          | 0/12 [00:00<?, ?it/s]开始验证模型
+100%|██████████| 12/12 [01:24<00:00,  7.08s/it]
+testLoss: 25.50509, werScore: 100.00
+bestLoss: 24.65093, bestEpoch: 54, bestWerScore: 86.78, bestWerScoreEpoch: 8
+  0%|          | 0/12 [00:00<?, ?it/s]开始验证模型
+100%|██████████| 12/12 [01:09<00:00,  5.76s/it]
+testLoss: 24.81076, werScore: 100.00
+bestLoss: 24.65093, bestEpoch: 54, bestWerScore: 86.78, bestWerScoreEpoch: 8
+开始验证模型
+100%|██████████| 12/12 [01:11<00:00,  5.99s/it]
+testLoss: 24.83436, werScore: 100.00
+bestLoss: 24.65093, bestEpoch: 54, bestWerScore: 86.78, bestWerScoreEpoch: 8
+  0%|          | 0/12 [00:00<?, ?it/s]开始验证模型
+100%|██████████| 12/12 [01:16<00:00,  6.34s/it]
+testLoss: 24.71437, werScore: 98.33
+bestLoss: 24.65093, bestEpoch: 54, bestWerScore: 86.78, bestWerScoreEpoch: 8
+开始验证模型
+100%|██████████| 12/12 [00:55<00:00,  4.66s/it]
+testLoss: 25.13032, werScore: 92.62
+bestLoss: 24.65093, bestEpoch: 54, bestWerScore: 86.78, bestWerScoreEpoch: 8
+开始验证模型
+100%|██████████| 12/12 [01:16<00:00,  6.37s/it]
+testLoss: 25.47516, werScore: 88.87
+bestLoss: 24.65093, bestEpoch: 54, bestWerScore: 86.78, bestWerScoreEpoch: 8
+开始验证模型
+100%|██████████| 12/12 [01:04<00:00,  5.36s/it]
+testLoss: 25.72166, werScore: 88.87
+bestLoss: 24.65093, bestEpoch: 54, bestWerScore: 86.78, bestWerScoreEpoch: 8
+  0%|          | 0/12 [00:00<?, ?it/s]开始验证模型
+100%|██████████| 12/12 [01:15<00:00,  6.33s/it]
+testLoss: 25.87929, werScore: 88.87
+bestLoss: 24.65093, bestEpoch: 54, bestWerScore: 86.78, bestWerScoreEpoch: 8
+  0%|          | 0/12 [00:00<?, ?it/s]开始验证模型
+100%|██████████| 12/12 [01:15<00:00,  6.31s/it]
+testLoss: 25.69526, werScore: 88.87
+bestLoss: 24.65093, bestEpoch: 54, bestWerScore: 86.78, bestWerScoreEpoch: 8
+开始验证模型
+100%|██████████| 12/12 [00:54<00:00,  4.51s/it]
+testLoss: 25.74614, werScore: 88.87
+bestLoss: 24.65093, bestEpoch: 54, bestWerScore: 86.78, bestWerScoreEpoch: 8
+开始验证模型
+100%|██████████| 12/12 [01:33<00:00,  7.81s/it]
+testLoss: 25.39394, werScore: 88.87
+bestLoss: 24.65093, bestEpoch: 54, bestWerScore: 86.78, bestWerScoreEpoch: 8
+开始验证模型
+100%|██████████| 12/12 [01:30<00:00,  7.53s/it]
+testLoss: 25.35107, werScore: 88.87
+bestLoss: 24.65093, bestEpoch: 54, bestWerScore: 86.78, bestWerScoreEpoch: 8
+开始验证模型
+100%|██████████| 12/12 [01:02<00:00,  5.24s/it]
+testLoss: 25.35597, werScore: 88.87
+bestLoss: 24.65093, bestEpoch: 54, bestWerScore: 86.78, bestWerScoreEpoch: 8
+开始验证模型
+100%|██████████| 12/12 [01:16<00:00,  6.37s/it]
+testLoss: 25.22559, werScore: 88.87
+bestLoss: 24.65093, bestEpoch: 54, bestWerScore: 86.78, bestWerScoreEpoch: 8
+开始验证模型
+100%|██████████| 12/12 [01:00<00:00,  5.01s/it]
+testLoss: 25.22299, werScore: 88.87
+bestLoss: 24.65093, bestEpoch: 54, bestWerScore: 86.78, bestWerScoreEpoch: 8
+开始验证模型
+100%|██████████| 12/12 [01:02<00:00,  5.19s/it]
+testLoss: 25.30340, werScore: 88.87
+bestLoss: 24.65093, bestEpoch: 54, bestWerScore: 86.78, bestWerScoreEpoch: 8
+  0%|          | 0/12 [00:00<?, ?it/s]开始验证模型
+100%|██████████| 12/12 [00:49<00:00,  4.16s/it]
+testLoss: 25.17463, werScore: 88.87
+bestLoss: 24.65093, bestEpoch: 54, bestWerScore: 86.78, bestWerScoreEpoch: 8
+  0%|          | 0/12 [00:00<?, ?it/s]开始验证模型
+100%|██████████| 12/12 [01:01<00:00,  5.15s/it]
+testLoss: 24.85764, werScore: 92.62
+bestLoss: 24.65093, bestEpoch: 54, bestWerScore: 86.78, bestWerScoreEpoch: 8
+  0%|          | 0/12 [00:00<?, ?it/s]开始验证模型
+100%|██████████| 12/12 [01:15<00:00,  6.30s/it]
+testLoss: 24.76623, werScore: 93.66
+bestLoss: 24.65093, bestEpoch: 54, bestWerScore: 86.78, bestWerScoreEpoch: 8
+开始验证模型
+100%|██████████| 12/12 [00:59<00:00,  4.98s/it]
+testLoss: 24.79736, werScore: 93.66
+bestLoss: 24.65093, bestEpoch: 54, bestWerScore: 86.78, bestWerScoreEpoch: 8
+开始验证模型
+100%|██████████| 12/12 [01:08<00:00,  5.71s/it]
+testLoss: 24.76104, werScore: 93.66
+bestLoss: 24.65093, bestEpoch: 54, bestWerScore: 86.78, bestWerScoreEpoch: 8
+开始验证模型
+100%|██████████| 12/12 [01:11<00:00,  5.93s/it]
+testLoss: 24.76564, werScore: 93.66
+bestLoss: 24.65093, bestEpoch: 54, bestWerScore: 86.78, bestWerScoreEpoch: 8
+开始验证模型
+100%|██████████| 12/12 [01:03<00:00,  5.32s/it]
+testLoss: 24.77337, werScore: 93.66
+bestLoss: 24.65093, bestEpoch: 54, bestWerScore: 86.78, bestWerScoreEpoch: 8
+开始验证模型
+100%|██████████| 12/12 [01:01<00:00,  5.14s/it]
+testLoss: 24.82139, werScore: 92.62
+bestLoss: 24.65093, bestEpoch: 54, bestWerScore: 86.78, bestWerScoreEpoch: 8
+开始验证模型
+100%|██████████| 12/12 [01:05<00:00,  5.50s/it]
+testLoss: 24.68719, werScore: 93.66
+bestLoss: 24.65093, bestEpoch: 54, bestWerScore: 86.78, bestWerScoreEpoch: 8
+  0%|          | 0/12 [00:00<?, ?it/s]开始验证模型
+100%|██████████| 12/12 [01:10<00:00,  5.83s/it]
+testLoss: 24.68892, werScore: 93.66
+bestLoss: 24.65093, bestEpoch: 54, bestWerScore: 86.78, bestWerScoreEpoch: 8
+开始验证模型
+100%|██████████| 12/12 [01:30<00:00,  7.58s/it]
+testLoss: 24.63358, werScore: 93.66
+bestLoss: 24.63358, bestEpoch: 52, bestWerScore: 86.78, bestWerScoreEpoch: 8
+开始验证模型
+100%|██████████| 12/12 [01:32<00:00,  7.68s/it]
+testLoss: 24.68841, werScore: 93.66
+bestLoss: 24.63358, bestEpoch: 52, bestWerScore: 86.78, bestWerScoreEpoch: 8
+开始验证模型
+100%|██████████| 12/12 [01:19<00:00,  6.64s/it]
+testLoss: 24.65093, werScore: 93.66
+bestLoss: 24.63358, bestEpoch: 52, bestWerScore: 86.78, bestWerScoreEpoch: 8
+
+Process finished with exit code 0
