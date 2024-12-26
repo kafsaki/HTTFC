@@ -40,45 +40,48 @@ Flask==3.0.3
 
 
 ├─data			  # 存放本地训练和推理用CE-CSL数据集和前端获取的推理用数据集
+
 │  ├─CE-CSL		 # 本地训练和推理用CE-CSL数据集
+
 │  │  ├─images	    # 从CE-CSL视频分割的图像序列
+
 │  │  ├─label	        # CE-CSL数据集标签（原句和分割句子）
+
 │  │  ├─mediapipe      # 从图像序列中提取的手部关键点坐标
+
 │  │  └─video	       # CE-CSL视频
+
 │  └─mydataset	# 前端获取的推理用数据集
+
 │      ├─label		# CE-CSL数据集标签（+前端获取的伪标签）
+
 │      ├─mediapipe	# 前端获取视频中提取的手部关键点坐标
+
 │      └─video		# 前端获取的视频
+
 ├─evaluation
+
 ├─evaluationT
+
 ├─logs			# 训练和推理过程记录
+
 ├─mediaPipe_models	# （测试用）手部关键点四分类模型
+
 ├─module			# 保存训练模型
+
 ├─params			# 环境参数（含本地和前端不同的config.ini）
+
 ├─templates		# Flask前端模板
+
 └─testData		# （测试用）本地跑不动TFNet（55h/epoch）所以每个文件夹挑选一个视频进行训练
-    └─CE-CSL
-        ├─images
-        ├─label
-        └─mediapipe
 
+​    └─CE-CSL
 
+​        ├─images
 
-├─data
-│  └─mydataset
-│      ├─label
-│      ├─mediapipe
-│      │  └─test
-│      └─video
-│          └─test
-├─evaluation
-├─evaluationT
-├─logs
-├─mediaPipe_models
-├─module
-├─params
-├─templates
-├─testData
+​        ├─label
+
+​        └─mediapipe
 
 
 
