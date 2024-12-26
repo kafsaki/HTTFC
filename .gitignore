@@ -169,3 +169,8 @@ cython_debug/
 
 # PyPI configuration file
 .pypirc
+
+module/*
+
+data/mydataset/mediapipe/test/*
+data/mydataset/video/test/*

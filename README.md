@@ -50,9 +50,7 @@ Flask==3.0.3
 │      ├─mediapipe	# 前端获取视频中提取的手部关键点坐标
 │      └─video		# 前端获取的视频
 ├─evaluation
-│  └─__pycache__
 ├─evaluationT
-│  └─__pycache__
 ├─logs			# 训练和推理过程记录
 ├─mediaPipe_models	# （测试用）手部关键点四分类模型
 ├─module			# 保存训练模型
@@ -63,6 +61,24 @@ Flask==3.0.3
         ├─images
         ├─label
         └─mediapipe
+
+
+
+├─data
+│  └─mydataset
+│      ├─label
+│      ├─mediapipe
+│      │  └─test
+│      └─video
+│          └─test
+├─evaluation
+├─evaluationT
+├─logs
+├─mediaPipe_models
+├─module
+├─params
+├─templates
+├─testData
 
 
 
@@ -110,6 +126,8 @@ ENJOY!
 
 ## 从前端获取数据推理
 
+通过*基于CE-CSL手部关键点数据集和HTTFC*训练得到模型后
+
 直接运行APP_flaskapp即可
 
 
@@ -124,4 +142,4 @@ ENJOY!
 
 还好mediapipe在CPU上运行很快...
 
-![training_metrics2.png](logs\training_metrics2.png)
+![training_metrics2.png](logs/training_metrics2.png)
