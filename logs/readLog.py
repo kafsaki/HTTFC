@@ -11,8 +11,8 @@ if action == "train":
     )
 
     # 读取文件内容
-    input_file = "logs/training_log2.txt"
-    output_file = "logs/training_log2.csv"
+    input_file = "training_log2.txt"
+    output_file = "training_log2.csv"
 
     with open(input_file, "r", encoding="utf-8") as f:
         content = f.read()
@@ -38,8 +38,8 @@ elif action == "test":
     )
 
     # 读取文件内容
-    input_file = "logs/testing_log2.txt"
-    output_file = "logs/testing_log2.csv"
+    input_file = "testing_log2.txt"
+    output_file = "testing_log2.csv"
 
     with open(input_file, "r", encoding="utf-8") as f:
         content = f.read()

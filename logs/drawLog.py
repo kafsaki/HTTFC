@@ -5,7 +5,7 @@ action = "compare"
 
 if action == "train":
     # 读取CSV文件
-    input_file = "logs/training_log2.csv"
+    input_file = "training_log2.csv"
     data = pd.read_csv(input_file)
 
     # 提取数据
@@ -34,7 +34,7 @@ if action == "train":
     plt.grid(True, linestyle="--", alpha=0.7)
 
     # 保存图片（可选）
-    output_image = "logs/training_metrics2.png"
+    output_image = "training_metrics2.png"
     plt.savefig(output_image, dpi=300)
 
     # 显示图表
@@ -42,7 +42,7 @@ if action == "train":
 
 elif action == "test":
     # 读取CSV文件
-    input_file = "logs/testing_log2.csv"  # 替换为你的CSV文件名
+    input_file = "testing_log2.csv"  # 替换为你的CSV文件名
     data = pd.read_csv(input_file)
 
     # 提取数据
@@ -67,7 +67,7 @@ elif action == "test":
     plt.grid(True, linestyle="--", alpha=0.7)
 
     # 保存图片（可选）
-    output_image = "logs/testing_metrics1.png"
+    output_image = "testing_metrics1.png"
     plt.savefig(output_image, dpi=300)
 
     # 显示图表
@@ -75,8 +75,8 @@ elif action == "test":
 
 elif action == "compare":
     # 读取CSV文件
-    input_file1 = "logs/training_log1.csv"
-    input_file2 = "logs/training_log2.csv"
+    input_file1 = "training_log1.csv"
+    input_file2 = "training_log2.csv"
 
     data1 = pd.read_csv(input_file1)
     data2 = pd.read_csv(input_file2)
@@ -113,7 +113,7 @@ elif action == "compare":
     plt.grid(True, linestyle="--", alpha=0.7)
 
     # 保存图片（可选）
-    output_image = "logs/training_comparison_metrics.png"
+    output_image = "training_comparison_metrics.png"
     plt.savefig(output_image, dpi=300)
 
     # 显示图表
