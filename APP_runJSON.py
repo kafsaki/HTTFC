@@ -98,12 +98,14 @@ def test(configParams, isTrain=True, isCalc=False):
         werScoreSum = 0
         loss_value = []
 
-        print("正在加载json")
-        with open("output/CE-CSL.json", "r", encoding="utf-8") as f:
-            new_json = json.load(f)
-        print("成功加载json")
-
+        id = 0
         for Dict in tqdm(testLoader):
+            # 每个epoch加载一次
+            # print("正在加载json")
+            with open("output/CE-CSL.json", "r", encoding="utf-8") as f:
+                new_json = json.load(f)
+            # print("成功加载json")
+
             data = Dict["video"].to(device)
             label = Dict["label"]
             dataLen = Dict["videoLength"]
@@ -133,21 +135,25 @@ def test(configParams, isTrain=True, isCalc=False):
             for hypothese, reference in zip(hypotheses, references):
                 hypothese= hypothese.replace(" ", "")
                 reference = reference.replace(" ", "")
-                print(f"hypothese: {hypothese}")
-                print(f"reference: {reference}")
+                # print(f"hypothese: {hypothese}")
+                # print(f"reference: {reference}")
+                id = id + 1
                 # 用识别结果和groundtruth构建新json元素
                 new_element = {
+                    "id": "test-{:05d}".format(id),
                     "recognition": hypothese,
                     "groundtruth": reference,
+                    "origin": "",
                     "translation": ""
                 }
                 new_json.append(new_element)
 
             torch.cuda.empty_cache()
 
-        # 将更新后的数据写回到 JSON 文件
-        with open("output/CE-CSL.json", "w", encoding="utf-8") as f:
-            json.dump(new_json, f, ensure_ascii=False, indent=2)
+            # 每个epoch保存一次
+            # 将更新后的数据写回到 JSON 文件
+            with open("output/CE-CSL.json", "w", encoding="utf-8") as f:
+                json.dump(new_json, f, ensure_ascii=False, indent=2)
 
         werScore = werScoreSum / len(testLoader)
 
