@@ -318,23 +318,9 @@ def train(configParams, isTrain=True, isCalc=False):
             moduleSavePath1 = 'module/bestMoudleNet_' + str(epoch) + '.pth'
             torch.save(moduleDict, moduleSavePath1)
 
-            if dataSetName == "RWTH":
-                ##########################################################################
-                DataProcessMoudle.write2file(filePath, total_info, total_sent)
-
-                evaluteMode('evalute_dev1')
-                ##########################################################################
-                DataProcessMoudle.write2file('./wer/' + "output-hypothesis-{}{:0>4d}.ctm".format('dev', epoch), total_info, total_sent)
-            elif dataSetName == "RWTH-T":
-                ##########################################################################
-                DataProcessMoudle.write2file(filePath, total_info, total_sent)
-                evaluteModeT('evalute_dev1')
-                ##########################################################################
-                DataProcessMoudle.write2file('./wer/' + "output-hypothesis-{}{:0>4d}.ctm".format('dev', epoch),
-                                             total_info, total_sent)
-
             print(f"validLoss: {currentLoss:.5f}, werScore: {werScore:.2f}")
             print(f"bestLoss: {bestLoss:.5f}, beatEpoch: {bestLossEpoch}, bestWerScore: {bestWerScore:.2f}, bestWerScoreEpoch: {bestWerScoreEpoch}")
+    # 验证模式
     else:
         bestWerScore = 65535
         offset = 1
@@ -377,12 +363,8 @@ def train(configParams, isTrain=True, isCalc=False):
 
                 pred, targetOutDataCTC = decoder.decode(logProbs1, lgt, batch_first=False, probs=False)
 
-                if dataSetName == "RWTH" or dataSetName == "RWTH-T":
-                    total_info += info
-                    total_sent += pred
-                elif dataSetName == "CSL-Daily" or dataSetName == "CE-CSL" or "CE-CSL-mediapipe":
-                    werScore = WerScore([targetOutDataCTC], targetData, idx2word, batchSize)
-                    werScoreSum = werScoreSum + werScore
+                werScore = WerScore([targetOutDataCTC], targetData, idx2word, batchSize)
+                werScoreSum = werScoreSum + werScore
 
                 torch.cuda.empty_cache()
 
@@ -398,20 +380,6 @@ def train(configParams, isTrain=True, isCalc=False):
                 bestLoss = currentLoss
                 bestLossEpoch = i + offset - 1
 
-            if dataSetName == "RWTH":
-                ##########################################################################
-                DataProcessMoudle.write2file(filePath, total_info, total_sent)
-                evaluteMode('evalute_test')
-                ##########################################################################
-                DataProcessMoudle.write2file('./wer/' + "output-hypothesis-{}{:0>4d}.ctm".format('test', i+1), total_info,
-                                             total_sent)
-            elif dataSetName == "RWTH-T":
-                ##########################################################################
-                DataProcessMoudle.write2file(filePath, total_info, total_sent)
-                evaluteModeT('evalute_test')
-                ##########################################################################
-                DataProcessMoudle.write2file('./wer/' + "output-hypothesis-{}{:0>4d}.ctm".format('test', i+1), total_info,
-                                             total_sent)
 
             print(f"testLoss: {currentLoss:.5f}, werScore: {werScore:.2f}")
             print(f"bestLoss: {bestLoss:.5f}, bestEpoch: {bestLossEpoch}, bestWerScore: {bestWerScore:.2f}, bestWerScoreEpoch: {bestWerScoreEpoch}")

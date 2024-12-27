@@ -5,7 +5,7 @@ def main():
     # 读取配置文件
     configParams = readConfig()
     # isTrain为True是训练模式，isTrain为False是验证模式
-    train(configParams, isTrain=True, isCalc=False)
+    train(configParams, isTrain=False, isCalc=True)
 
 
 if __name__ == '__main__':
