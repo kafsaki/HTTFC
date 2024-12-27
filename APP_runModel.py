@@ -15,6 +15,7 @@ from evaluationT import evaluteModeT
 import random
 from datetime import datetime
 import cv2
+import json
 
 import APP_DataProcessMoudle
 from APP_ReadConfig import readConfig
@@ -92,6 +93,11 @@ def test(configParams, isTrain=False, isCalc=True):
         # 验证模型
         werScoreSum = 0
 
+        print("正在加载json")
+        with open("output/example.json", "r", encoding="utf-8") as f:
+            new_json = json.load(f)
+        print("成功加载json")
+
         for Dict in tqdm(testLoader):
             data = Dict["video"].to(device)
             label = Dict["label"]
@@ -112,11 +118,24 @@ def test(configParams, isTrain=False, isCalc=True):
             werScore, hypotheses, references = WerScore([targetOutDataCTC], targetData, idx2word, batchSize)
             werScoreSum = werScoreSum + werScore
 
-            print(f"hypotheses: {hypotheses}");
-            print(f"references: {references}");
+            for hypothese, reference in zip(hypotheses, references):
+                hypothese= hypothese.replace(" ", "")
+                reference = reference.replace(" ", "")
+                print(f"hypothese: {hypothese}")
+                print(f"reference: {reference}")
+                # 用识别结果和groundtruth构建新json元素
+                new_element = {
+                    "recognition": hypothese,
+                    "groundtruth": reference,
+                    "translation": ""
+                }
+                new_json.append(new_element)
 
             torch.cuda.empty_cache()
 
+        # 将更新后的数据写回到 JSON 文件
+        with open("output/example.json", "w", encoding="utf-8") as f:
+            json.dump(new_json, f, ensure_ascii=False, indent=2)
 
         werScore = werScoreSum / len(testLoader)
 
@@ -137,3 +156,6 @@ def runModel():
     return test(configParams, isTrain=False, isCalc=True)
 
 
+
+if __name__ == '__main__':
+    runModel()

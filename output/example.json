@@ -1,12 +1,12 @@
 [
   {
-    "recognition": "你好",
-    "groundtruth": "你好",
+    "recognition": "依靠回来。",
+    "groundtruth": "你好。",
     "translation": ""
   },
   {
-    "recognition": "你好",
-    "groundtruth": "你好",
+    "recognition": "依靠回来。",
+    "groundtruth": "你好。",
     "translation": ""
   }
 ]
