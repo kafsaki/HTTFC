@@ -125,7 +125,6 @@ def test(configParams, isTrain=False, isCalc=True):
                 print(f"reference: {reference}")
                 # 用识别结果和groundtruth构建新json元素
                 new_element = {
-                    "id": "test-{:05d}".format(id),
                     "recognition": hypothese,
                     "groundtruth": reference,
                     "origin": "",

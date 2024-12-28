@@ -13,5 +13,29 @@
     "recognition": "依靠回来。",
     "groundtruth": "你好。",
     "translation": ""
+  },
+  {
+    "recognition": "你好。",
+    "groundtruth": "没有。",
+    "origin": "",
+    "translation": ""
+  },
+  {
+    "recognition": "快回来。",
+    "groundtruth": "没有。",
+    "origin": "",
+    "translation": ""
+  },
+  {
+    "recognition": "你好。",
+    "groundtruth": "没有。",
+    "origin": "",
+    "translation": ""
+  },
+  {
+    "recognition": "你好。",
+    "groundtruth": "没有。",
+    "origin": "",
+    "translation": ""
   }
 ]

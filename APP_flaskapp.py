@@ -5,6 +5,8 @@ import csv
 import cv2
 import numpy as np
 from flask import Flask, render_template, request, jsonify
+import requests
+import json
 
 from APP_convertVideoToTxt import convertVideoToTxt
 from APP_runModel import runModel
@@ -32,7 +34,7 @@ def update_csv_file(videoName):
         reader = csv.reader(csvfile)
         rows = list(reader)
         # 创建新的最后一行
-        new_row = [videoName, 'L', '你好。', '你/好/。', '']
+        new_row = [videoName, 'L', '没有。', '没有/。', '']
         # 替换最后一行
         rows[-1] = new_row
         # 将修改后的内容写回文件
@@ -76,9 +78,25 @@ def upload_video():
     update_config_file(currentUser, videoName)
     update_csv_file(videoName)
 
-    translation = runModel()
+    recognition = runModel() # 返回["str"]
 
-    return jsonify({"status": "success", "videoName": videoName, "translation":translation})
+    package = {
+        "recognition": recognition
+    }
+    # 发送POST请求到后台接口
+    url = 'http://ctnn0kcp420c739acjog-5000.agent.damodel.com/translate'  # 后台地址(在damodel控制台申请)
+    print("\033[32mClient: waiting for response...\033[0m")
+    response = requests.post(url, json=package, headers={"Content-Type": "application/json"})
+    # 获取后台返回的响应
+    if response.status_code == 200:
+        data = response.json()
+        translation = data.get('translation', None)
+        print("Translation received from backend:", translation)
+    else:
+        translation = f"服务器响应错误，返回代码：{response.status_code}"
+        print("Error in response:", response.status_code)
+
+    return jsonify({"status": "success", "videoName": videoName, "recognition":recognition, "translation":translation})
 
 
 if __name__ == '__main__':
